@@ -17,7 +17,7 @@
     <div class="container-booking">
         <div class="navbar-booking">
         
-        <img src="images/logo-2.png" class="logo">
+        <img src="images/logo-2.png" class="logo" alt="gg">
         
         <nav>
             <ul>
@@ -25,11 +25,11 @@
                 <li><a href="Resturants.html">Restaurants</a></li>
                 <li><a href="Branches.html">Branches</a></li>
                 <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="Booking.html"><button type="button">Book now</button></a></li>
+                <li><button type="button" ><a href="Booking.html">Book now</a></button></li>
             </ul>
             
         </nav>
-        <img src="images/icons8-menu-60.png" class="menu-icon">
+        <img src="images/icons8-menu-60.png" class="menu-icon" alt="ggd">
         
         </div>
         <section class="homew">
@@ -49,23 +49,23 @@
                     <legend>Personal Details</legend>
                     <div class="bookingRow">
                         <div class="inputBox">
-                            <span>First Name</span>
+                            <label for="fname">First Name</label>
                             <input type="text" required id="fname" placeholder="Enter your First Name">
                         </div>
                         <div class="inputBox">
-                            <span>Last Name</span>
+                            <label for="lname">Last Name</label>
                             <input type="text" required id="lname" placeholder="Enter your Last Name">
                         </div>
                         <div class="inputBox">
-                            <span>Email Address</span>
+                            <label for="email">Email Address</label>
                             <input type="text" required id="email" placeholder="Enter your Email Address">
                         </div>
                         <div class="inputBox">
-                            <span>Phone Number</span>
+                            <label for="phone">Phone Number</label>
                             <input type="number" required id="phone" placeholder="Enter your Phone Number">
                         </div>
                         <div class="inputBox">
-                            <span>Country</span>
+                            <label for="country">Country</label>
                             <input type="text" required id="country" placeholder="Enter your Country">
                         </div>
                     </div> 
@@ -75,66 +75,66 @@
                     <legend>Booking Details</legend>
                     <div class="bookingRow">
                         <div class="inputBox">
-                            <span>Check In Date</span>
+                    <label for="checkIn">Check In Date</label>
                             <input type="date" required id="checkIn">
                         </div>
                         <div class="inputBox">
-                            <span>Check Out Date</span>
+                            <label for="checkOut">Check Out Date</label>
                             <input type="date" required id="checkOut">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Adults</span>
+                            <label for="noadults">No. of Adults</label>
                             <input type="number"  id="noadults" placeholder="Enter number of Adults">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Children</span>
+                            <label for="nochildren">No. of Children</label>
                             <input type="number"  id="nochildren" placeholder="Enter number of Children">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Single Rooms</span>
+                            <label for="single">No. of Single Rooms</label>
                             <input type="number"  id="single" placeholder="Enter number of Single Rooms">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Double Rooms</span>
+                            <label for="double">No. of Double Rooms</label>
                             <input type="number"  id="double" placeholder="Enter number of Double Rooms">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Triple Rooms</span>
+                            <label for="triple">No. of Triple Rooms</label>
                             <input type="number"  id="triple" placeholder="Enter number of Triple Rooms">
                         </div>
                         <div class="inputBox">
-                            <span>Meals - Kids under 5 Years</span>
+                            <label for="kidsmeal">Meals - Kids under 5 Years</label>
                             <input type="number"  id="kidsmeal" placeholder="Enter number of Kids under 5 Years">
                         </div>
                         <div class="inputBox checkBox">
-                            <span>Extra Addons</span>
-                            <label>
+                            <label>Extra Addons</label>
+                            <label for="wifi">
                                 <input type="checkbox" id="wifi">
                                 WiFi
                             </label>
-                            <label>
+                            <label for="poolView">
                                 <input type="checkbox" id="poolView">
                                 Pool View
                             </label>
-                            <label>
+                            <label for="gardenView">
                                 <input type="checkbox" id="gardenView">
                                 Garden View
                             </label>
-                            <label>
+                            <label for="extraBed">
                                 <input type="checkbox" id="extraBed">
                                 Extra Bed
                             </label>
                         </div>
                         <div class="inputBox">
-                            <span>Promo code</span>
+                            <label for="promoCode">Promo code</label>
                             <input type="text"  id="promoCode" placeholder="Enter Promo">
                         </div>
                         <div class="inputBox">
-                            <span>loyalty points</span>
+                            <label for="loyalty">loyalty points</label>
                             <p id="loyalty"></p>
                         </div>
                         <section class="price">
-                            <span>Total Booking Price</span><br>
+                            <label for="bookingOutput">Total Booking Price</label><br>
                             <p id="bookingOutput">LKR 0.00</p>
                             
                             
@@ -151,19 +151,19 @@
                     <legend>Adventure Booking</legend>
                     <div class="bookingRow">
                         <div class="inputBox">
-                            <span>No. of Local Adults</span>
+                            <label for="localAdults">No. of Local Adults</label>
                             <input type="number" required id="localAdults" placeholder="Enter number of Local Adults">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Local Children</span>
+                            <label for="localChildren">No. of Local Children</label>
                             <input type="number" required id="localChildren" placeholder="Enter number of Local Children">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Foreign Adults</span>
+                            <label for="foreignAdults">No. of Foreign Adults</label>
                             <input type="number" required id="foreignAdults" placeholder="Enter number of Foreign Adults">
                         </div>
                         <div class="inputBox">
-                            <span>No. of Foreign Kids</span>
+                            <label for="foreignChildren">No. of Foreign Kids</label>
                             <input type="number" required id="foreignChildren" placeholder="Enter number of Foreign Children">
                         </div>
                         <div class="inputBox">
@@ -244,6 +244,7 @@
             
             </table>     
     </section>
+</body>
     <footer class="booter">
         <div class="footer-box">
             <h3>Services</h3>
@@ -270,14 +271,15 @@
         <div class="footer-box">
             <h3>Socials</h3>
             <div class="Social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">&nbsp;<i class="fab fa-facebook-f"></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">&nbsp;<i class="fab fa-twitter"></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr">&nbsp;<i class="fab fa-instagram"></i></a>
             </div>
         </div>
+        <div class="coypright">
+            <p>Coypright 2023 by Havinth Thashinthan</p>
+            </div>
     </footer>
-          <div class="coypright">
-          <p>Coypright 2023 by Havinth Thashinthan</p>
-          </div>
+        
                 
-</body>
+

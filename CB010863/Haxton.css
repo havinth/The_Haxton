@@ -75,7 +75,6 @@ button{
   border-radius: 20px;
   outline: none;
   margin-top: 30px;
-  transition: scale 0.2 ease;
 }
 
 nav ul li a:hover{
@@ -83,21 +82,21 @@ nav ul li a:hover{
 }
 
 button:hover{
-  scale: 1.05;
   color: #fff;
+  transform: scale(1.05);
 }
 
 button:active{
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 .logo:hover{
-  scale: 1.05;
+  transform: scale(1.05);
   color: #fff;
 }
 
 .logo:active{
-  scale: 1;
+  transform:scale(1);
 }
 section{
   text-align: left;
@@ -174,7 +173,7 @@ section{
   position: relative;
 }
 .cards img:hover{
-  scale: 1.05;
+ transform: scale(1.05);
   color: #fff;
 }
 .cards div span{
@@ -278,7 +277,6 @@ section{
 
 .about-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -300,7 +298,6 @@ margin-left: 650px;
   font-family: 'Montserrat', sans-serif;
   font-size:22px;
   font-weight: 600;
-  color: var(#333);
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 20px;
@@ -308,7 +305,6 @@ margin-left: 650px;
 
 .about-text h3{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(h3);
   font-weight: 800;
   line-height:1.2;
   margin-bottom: 25px;
@@ -316,7 +312,6 @@ margin-left: 650px;
 
 .about-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -336,7 +331,6 @@ margin-left: 650px;
 .footer-box h3{
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600px;
   margin-bottom: 15px;
 }
 .footer-box a{
@@ -346,7 +340,6 @@ margin-left: 650px;
 }
 .footer-box a:hover{
   transform: translateX(-5px);
-  color: var(orange);
 }
 .social a{
   display: inline-flex;
@@ -411,11 +404,9 @@ margin-left: 650px;
 .row-img img{
   width: 100%;
   display: block;
-  transform: translateX(0.7s);
 }
 .resw-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -439,14 +430,12 @@ margin-left: 650px;
   font-family: 'Montserrat', sans-serif;
   font-size:22px;
   font-weight: 600;
-  color: var(#333);
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 20px;
 }
 .resw-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -458,7 +447,6 @@ margin-left: 650px;
 }
 .resw2-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -520,7 +508,6 @@ margin-left: 650px;
   font-family: 'Montserrat', sans-serif;
   font-size:22px;
   font-weight: 600;
-  color: var(#333);
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 20px;
@@ -534,9 +521,7 @@ margin-left: 650px;
 }
 .indian-cusine{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
-  gap: 9em em;
   margin-top: 200px;
 }
 .indian-img img{
@@ -582,7 +567,6 @@ margin-left: 650px;
   border-radius: 5px;
   outline: none;
   margin-top: 10px;
-  transition: scale 0.2 ease;
   font-family: 'Montserrat', sans-serif;
 }
 .indian-text button{
@@ -596,7 +580,6 @@ margin-left: 650px;
   border-radius: 5px;
   outline: none;
   margin-top: 10px;
-  transition: scale 0.2 ease;
   font-family: 'Montserrat', sans-serif;
 }
 .text-it button{
@@ -609,7 +592,6 @@ margin-left: 650px;
   border-radius: 5px;
   outline: none;
   margin-top: -400px;
-  transition: scale 0.2 ease;
   font-family: 'Montserrat', sans-serif;
 }
 .icon-content{
@@ -634,10 +616,9 @@ margin-left: 650px;
   margin-top: 200px;
   width: 100%;
   display: block;
-  transform: translateX(0.7s);
 }
 .line{
-  margin: 100 px;
+  margin: 100px;
   border-left: 3px solid green;
   height: 200px;
 }
@@ -660,7 +641,6 @@ margin-left: 650px;
 }
 .why-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -690,7 +670,6 @@ margin-left: 500px;
 
 .why-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -725,7 +704,6 @@ margin-left: 500px;
 .brn-colombo p{
   margin: 20px 0 50px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:#fff;
@@ -739,7 +717,6 @@ margin-left: 500px;
 }
 .yala-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -755,7 +732,6 @@ margin-left: 500px;
 .yala-text{
   margin-top: -600px;
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -765,7 +741,6 @@ margin-left: 500px;
   font-family: 'Montserrat', sans-serif;
   font-size:22px;
   font-weight: 600;
-  color: var(#333);
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 20px;
@@ -773,7 +748,6 @@ margin-left: 500px;
 .yala-text p{
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -810,7 +784,6 @@ margin-left: 500px;
   font-family: 'Montserrat', sans-serif;
   font-size:22px;
   font-weight: 600;
-  color: var(#333);
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-bottom: 20px;
@@ -819,7 +792,6 @@ margin-left: 500px;
   margin: 20px 0 50px 0;
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:white;
@@ -880,7 +852,6 @@ margin-left: 500px;
 }
 .adv-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -908,7 +879,6 @@ margin-left: 650px;
 }
 
 .adv-text h2{
-  font-size: var(h2);
   font-weight: 800;
   line-height:1.2;
   margin-bottom: 25px;
@@ -916,7 +886,6 @@ margin-left: 650px;
 
 .adv-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -951,7 +920,6 @@ margin-left: 650px;
 .safari-text p{
   margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -986,7 +954,6 @@ margin-left: 650px;
 }
 .sea-card{
   display: grid;
-  grid-template-columns:(2, 2fr);
   align-items: center;
   gap: 9em 10em;
 }
@@ -1005,7 +972,6 @@ margin-left: 650px;
 
 .sea-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -1044,7 +1010,6 @@ margin-left: 650px;
 }
 .form-text p{
   font-family: 'Montserrat', sans-serif;
-  font-size: var(p);
   font-weight: 800;
   line-height: 30px;
   color:black;
@@ -1150,7 +1115,7 @@ margin-left: 650px;
   margin: 20px 15px;
 }
 
-.inputBox span{
+.inputBox label{
   margin-left: 12px;
   margin-bottom: 4px;
   text-transform: uppercase;
