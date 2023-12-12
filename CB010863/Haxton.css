@@ -100,7 +100,6 @@ button:active{
   scale: 1;
 }
 section{
-  padding: 100px 300px;
   text-align: left;
 }
 
@@ -327,6 +326,7 @@ margin-left: 650px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0rem;
+  background-color: rgba(133, 104, 73, 0.33);
 }
 .footer-box{
   margin: 0px 100px;
@@ -1051,22 +1051,8 @@ margin-left: 650px;
   margin-bottom: 30px;
 }
 
-.main-form div{
-  margin: 10px 10px;
-  width: 300px;
-  display: inline-block;
-}
-.main-form div input {
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: none;
-  border: 1px solid #ffca00;;
-  font-size: 20px;
-  color: #fff;
-  outline: none;
-  padding: 3px 0 3px 10px;
-  margin-top: 10px;
-}
+
+
 .main-form div select{
   width: 104%;
   font-family: 'Montserrat', sans-serif;
@@ -1077,12 +1063,6 @@ margin-left: 650px;
   outline: none;
   padding: 3px 0 3px 10px;
   margin-top: 10px;
-}
-.main-form div span{
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 25px;
 }
 
 #submit{
@@ -1107,3 +1087,210 @@ margin-left: 650px;
   background-color: rgb(46, 20, 5) ;
   color: #fff ;
 }
+/*------------------------booking---------------------------------------*/
+.container-booking{
+  height: 28rem;
+  background: rgba(133, 104, 73, 0.33);
+  background-position: center;
+  background-size: cover;
+  padding-right: 4%;
+}
+.navbar-booking{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+.main-form{
+  margin: 4rem 0;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  margin-top: -340px;
+}
+
+#bookingForm{
+  color: #fff;
+  width: 50%;
+}
+
+#bookingForm fieldset{
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: #EC8F4C;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+}
+
+#bookingForm legend{
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color:#3f9cc1;
+  font-weight: bolder;
+}
+
+.bookingRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.inputBox{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px;
+}
+
+.inputBox span{
+  margin-left: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+.inputBox input{
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: 1px solid #ffca00;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+
+.inputBox select{
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: 1px solid #ffca00;;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 3px 0 3px 10px;
+  margin-top: 10px;
+}
+
+
+.inputBox input::placeholder{
+  color: #fff;
+  font-weight: 300;
+}
+
+.checkBox{
+  width: 30%;
+}
+
+.checkBox label{
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+
+input[type="checkbox"]{
+  flex: none;
+  width: auto;
+  height: 20px;
+  font-size: 12px;
+}
+.bookingTable {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.bookingTable span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  text-align: center;
+  color: #320707;
+}
+
+.bookingTable p {
+  margin: 0;
+  text-align: center;
+}
+
+
+.bookingTable > div {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#loyalty{
+  display: flex;
+  width: 180px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ffca00;
+}
+
+.tabley {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.roomButtons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.tabley th {
+  background-color: #6a3434;
+  padding: 12px;
+  text-align: left;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  color: #fff;
+}
+
+
+.tabley td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.tabley tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.tabley th,
+.tabley td {
+  padding: 12px;
+}
+
+
+.tabley tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+

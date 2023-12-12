@@ -2,62 +2,282 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Booking Form </title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="Haxton.css" />
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="Haxton.css">
+    <script src="booking.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
-<body class="main_bg">
-    <div class="form">
-        <div class="form-text">
-            <h1><span><img src="art-1.png" alt=""></span>Book Now <span><img src="art-1.png" alt=""></span></h1>
-            <p>Enjoy Your Dream Vacation</p>
+<header> 
+    <div class="container-booking">
+        <div class="navbar-booking">
+        
+        <img src="images/logo-2.png" class="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="Haxton.html">Home</a></li>
+                <li><a href="Resturants.html">Restaurants</a></li>
+                <li><a href="Branches.html">Branches</a></li>
+                <li><a href="Adventures.html">Adventures</a></li>
+                <li><a href="Booking.html"><button type="button">Book now</button></a></li>
+            </ul>
+            
+        </nav>
+        <img src="images/icons8-menu-60.png" class="menu-icon">
+        
         </div>
+        <section class="homew">
+            <div class="contenty"> 
+            </div>
+        </section>
+
+    </div>
+     
+</header>
+
+<body>
+    <section class="main-bg"> 
         <div class="main-form">
-            <form action="index.php" method="get">
-                <div>
-                    <span>Your full name ?</span>
-                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
-                </div>
-                <div>
-                    <span>Your email address ?</span>
-                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
-                </div>
-                <div>
-                    <!-- <---this is the select option--->
-                    <span>How many people ?</span>
-                    <select name="people" id="people" required>
-                        <option value="">People</option>
-                        <option value="1">1 People</option>
-                        <option value="2">2 People</option>
-                        <option value="3">3 People</option>
-                        <option value="4">4 People</option>
-                    </select>
-                    <!-- <---this is the select option--->
-                </div>
-                <div>
-                    <span>Which Hotel?</span>
-                    <input type="text" name="time" id="time" placeholder="Time" required>
-                </div>
-                <div>
-                    <span>What is the date ?</span>
-                    <input type="date" name="date" id="date" placeholder="date" required>
-                </div>
-                <div>
-                    <span>Your phone number ?</span>
-                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
-                </div>
-                <div id="submit">
-                    <input type="submit" value="SUBMIT" id="submit">
-                </div>
+            <form id="bookingForm">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="bookingRow">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input type="text" required id="fname" placeholder="Enter your First Name">
+                        </div>
+                        <div class="inputBox">
+                            <span>Last Name</span>
+                            <input type="text" required id="lname" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="inputBox">
+                            <span>Email Address</span>
+                            <input type="text" required id="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="inputBox">
+                            <span>Phone Number</span>
+                            <input type="number" required id="phone" placeholder="Enter your Phone Number">
+                        </div>
+                        <div class="inputBox">
+                            <span>Country</span>
+                            <input type="text" required id="country" placeholder="Enter your Country">
+                        </div>
+                    </div> 
+                </fieldset>
 
+                <fieldset>
+                    <legend>Booking Details</legend>
+                    <div class="bookingRow">
+                        <div class="inputBox">
+                            <span>Check In Date</span>
+                            <input type="date" required id="checkIn">
+                        </div>
+                        <div class="inputBox">
+                            <span>Check Out Date</span>
+                            <input type="date" required id="checkOut">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Adults</span>
+                            <input type="number"  id="noadults" placeholder="Enter number of Adults">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Children</span>
+                            <input type="number"  id="nochildren" placeholder="Enter number of Children">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Single Rooms</span>
+                            <input type="number"  id="single" placeholder="Enter number of Single Rooms">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Double Rooms</span>
+                            <input type="number"  id="double" placeholder="Enter number of Double Rooms">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Triple Rooms</span>
+                            <input type="number"  id="triple" placeholder="Enter number of Triple Rooms">
+                        </div>
+                        <div class="inputBox">
+                            <span>Meals - Kids under 5 Years</span>
+                            <input type="number"  id="kidsmeal" placeholder="Enter number of Kids under 5 Years">
+                        </div>
+                        <div class="inputBox checkBox">
+                            <span>Extra Addons</span>
+                            <label>
+                                <input type="checkbox" id="wifi">
+                                WiFi
+                            </label>
+                            <label>
+                                <input type="checkbox" id="poolView">
+                                Pool View
+                            </label>
+                            <label>
+                                <input type="checkbox" id="gardenView">
+                                Garden View
+                            </label>
+                            <label>
+                                <input type="checkbox" id="extraBed">
+                                Extra Bed
+                            </label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Promo code</span>
+                            <input type="text"  id="promoCode" placeholder="Enter Promo">
+                        </div>
+                        <div class="inputBox">
+                            <span>loyalty points</span>
+                            <p id="loyalty"></p>
+                        </div>
+                        <section class="price">
+                            <span>Total Booking Price</span><br>
+                            <p id="bookingOutput">LKR 0.00</p>
+                            
+                            
+                        </section>
+                        <div class="roomButtons">
+                            <button type="button" id="loyaltybtn">Check Loyalty</button>
+                            <button type="button" id="bookRoomButton">Book Now</button>
+                            <button type="button" id="addfav">Add To Favorites</button>
+                        </div>
+                    </div>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Adventure Booking</legend>
+                    <div class="bookingRow">
+                        <div class="inputBox">
+                            <span>No. of Local Adults</span>
+                            <input type="number" required id="localAdults" placeholder="Enter number of Local Adults">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Local Children</span>
+                            <input type="number" required id="localChildren" placeholder="Enter number of Local Children">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Foreign Adults</span>
+                            <input type="number" required id="foreignAdults" placeholder="Enter number of Foreign Adults">
+                        </div>
+                        <div class="inputBox">
+                            <span>No. of Foreign Kids</span>
+                            <input type="number" required id="foreignChildren" placeholder="Enter number of Foreign Children">
+                        </div>
+                        <div class="inputBox">
+                            <span>Adventure Type</span>
+                            <select id="advType">
+                                <option value="none">Select an Option</option>
+                                <option value="diving">Diving</option>
+                                <option value="nature">Trail with Nature</option>
+                                <option value="bungee">Bungee Jumping</option>
+                                <option value="zipLining">Zip Lining</option>
+                            </select>
+                        </div>
+                        <div class="inputBox checkBox">
+                            <span>Adventure Guide</span>
+                            <label>
+                                <input type="checkbox" id="adultGuide">
+                                Adults
+                            </label>
+                            <label>
+                                <input type="checkbox" id="kidGuide">
+                                Kids
+                            </label>
+                            <span>Total Adventure Price</span><br>
+                <p id="advbookingOutput">LKR 0.00</p>
+                        </div>
+                        <div class="roomButtons">
+                            <button type="button" id="bookAdventureButton">Book Adventure</button>
+                            <button type="button" id="advenbtn">Add To Favorites</button>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </div>
-    </div>
-</body>
+    </section>
+    <section class="bookingTable">
+        <div>Overall Booking</div>
+            <table class="tabley" id="bookdetails">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Check-In</th>
+                        <th>Check-Out</th>
+                        <th>Adults</th>
+                        <th>Children</th>                           
+                        <th>Single Room</th>
+                        <th>Double Rooms</th>
+                        <th>Triple Rooms</th>
+                        <th>Extra Bed</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="booklist">
 
-</html>
+                </tbody>
+            
+            </table>     
+    </section>
+
+    <section class="bookingTable">
+        <div>Overall Adventure Booking</div>
+            <table class="tabley" id="advdetails">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Adventures</th>
+                        <th>Local Adults</th>
+                        <th>Local Kids</th>
+                        <th>Foreign Adults</th>
+                        <th>Foreign Kids</th>
+                        <th>Guide (Adults)</th>
+                        <th>Guide (Kids)</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="advlist">
+
+                </tbody>
+            
+            </table>     
+    </section>
+    <footer class="booter">
+        <div class="footer-box">
+            <h3>Services</h3>
+            <a href="#">Email Marketing</a>
+            <a href="#">Campaigs</a>
+            <a href="#">Branding</a>
+            <a href="#">Offline</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our story</a>
+            <a href="#">Benifits</a>
+            <a href="#">Team</a>
+            <a href="#">Careers</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>Help</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+        </div>
+    
+        <div class="footer-box">
+            <h3>Socials</h3>
+            <div class="Social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+          <div class="coypright">
+          <p>Coypright 2023 by Havinth Thashinthan</p>
+          </div>
+                
+</body>
