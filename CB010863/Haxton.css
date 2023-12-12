@@ -1241,6 +1241,10 @@ input[type="checkbox"]{
   border: 1px solid #ffca00;
 }
 
+.inputBox option{
+  background-color: #EC8F4C;
+}
+
 .tabley {
   width: 100%;
   border-collapse: collapse;
@@ -1258,7 +1262,7 @@ input[type="checkbox"]{
 
 
 .tabley th {
-  background-color: #6a3434;
+  background-color: rgb(195, 123, 46);
   padding: 12px;
   text-align: left;
   font-weight: 400;
