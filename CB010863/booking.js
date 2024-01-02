@@ -308,7 +308,7 @@ function saveAdvFav(){
         foreignChildren: foreignChildrenInput.value || 0,
         adultGuide: adultGuideCheckbox.checked ? 'Yes' : 'No',
         kidGuide: kidGuideCheckbox.checked ? 'Yes' : 'No',
-       
+        advType: advTypeSelect.value,
     }
     alert("Your choices for adventure have been favourited!");
     localStorage.setItem('favouriteAdvBooking', JSON.stringify(advBooking));
